@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/cut_card_background"
+    android:padding="16dp"
+    tools:context=".FiturActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="500dp"
+            android:layout_height="111dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Fitur"
+            android:textAlignment="center"
+            android:textColor="@color/beige"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@color/white"
+            android:layout_marginTop="40dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tabel Fitur:"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="8dp">
+
+                    <!-- Header Tabel -->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="3dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="No"
+                            android:textColor="@color/red"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="Nama Variable"
+                            android:textColor="@color/red"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="Tipe Data"
+                            android:textColor="@color/red"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Keterangan"
+                            android:textColor="@color/red"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="Age"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="int64"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Umur"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="2"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="Systolic"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="int64"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Tekanan Darah"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="3"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="Relaxation"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="int64"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Tekanan Darah Relaksasi"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="4"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="Fasting Blood Sugar"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="int64"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Gula Darah"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <!-- Baris 8 -->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="5"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="Cholesterol"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="int64"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Kolesterol"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <!-- Baris 10 -->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="6"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="Triglyceride"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="int64"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Trigliserida"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <!-- Baris 11 -->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="7"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="Hemoglobin"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="float64"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Hemoglobin"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <!-- Baris 13 -->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="8"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="Urine Protein"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="int64"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Protein Urin"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <!-- Baris 14 -->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="9"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="Serum Creatinine"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="float64"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Kreatinin Serum"
+                            android:textColor="@color/red"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

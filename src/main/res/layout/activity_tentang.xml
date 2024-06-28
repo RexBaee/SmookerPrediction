@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cut_card_background"
+    tools:context=".FiturActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cut_card_background"
+        android:orientation="vertical"
+        android:weightSum="10"
+        app:layout_constraintBaseline_toBaselineOf="parent">
+
+        <RelativeLayout
+            android:layout_width="408dp"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+
+        </RelativeLayout>
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7.5"
+            android:columnCount="1"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:padding="15dp">
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/beige"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="310dp"
+                        android:layout_height="450dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="30dp"
+                        android:text="\n Tentang Aplikasi \n \n  1. Sumber Dataset Kaggle \n \n https://www.kaggle.com/datasets/gauravduttakiit/smoker-status-prediction \n \n \n \n 2. Tujuan Dataset \n \nUntuk memprediksi status merokok seseorang, yang dapat membantu dalam intervensi dan pencegahan merokok. \n \n \n \n 3. Cara Menggunakan Aplikasi \n \nBuka aplikasi Smooker Prediction dan mulai untuk melakukan test deteksi di menu simulasi model, hasil deteksi adalah apakah orang tersebut perokok atau bukan perokok."
+                        android:textColor="@color/red"
+                        android:textSize="14sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

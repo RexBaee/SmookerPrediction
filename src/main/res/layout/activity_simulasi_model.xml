@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rose"
+    tools:context=".SimulasiModelActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="69dp">
+
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/beige"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/btnCheck"
+        app:layout_constraintStart_toStartOf="@id/btnCheck"
+        app:layout_constraintTop_toBottomOf="@id/btnCheck" />
+
+    <TextView
+        android:layout_width="430dp"
+        android:layout_height="120dp"
+        android:text="Simulasi Model"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/beige"
+        android:layout_marginTop="35dp"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:ems="15"
+        android:hint="Age (20-85)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/beige"
+        android:textColorHint="@color/beige"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/systolic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="15"
+        android:hint="Systolic (71-233)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/beige"
+        android:textColorHint="@color/beige"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/relaxation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="15"
+        android:hint="Relaxation (40-146)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/beige"
+        android:textColorHint="@color/beige"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/systolic"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/fastingbloodsugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="15"
+        android:hint="Fasting Blood Sugar (46-423)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/beige"
+        android:textColorHint="@color/beige"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relaxation"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/cholesterol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="15"
+        android:hint="Cholesterol (55-445)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/beige"
+        android:textColorHint="@color/beige"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fastingbloodsugar"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/triglyceride"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="15"
+        android:hint="Triglyceride (8-999)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/beige"
+        android:textColorHint="@color/beige"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cholesterol"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/hemoglobin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="15"
+        android:hint="Hemoglobin (4.9-21.1)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/beige"
+        android:textColorHint="@color/beige"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/triglyceride"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/urineprotein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="15"
+        android:hint="Urine Protein (1-6)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/beige"
+        android:textColorHint="@color/beige"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hemoglobin"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/serumcreatinine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="15"
+        android:hint="Serum Creatinine (0.1-11.6)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/beige"
+        android:textColorHint="@color/beige"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/urineprotein"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Predict"
+        android:textColor="@color/beige"
+        android:textColorHint="@color/beige"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/urineprotein"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
